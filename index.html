@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="theme-style" rel="stylesheet" href="dark.css">
+    <script src="https://kit.fontawesome.com/74e104b2e1.js" crossorigin="anonymous"></script>
+    <meta name="google" content="notranslate">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+    <h1 id="h1">Instant pace</h1>
+
+    <div class="dropdown">
+        <button><i class="fa-solid fa-bars"></i></button>
+        <div class="content">
+
+            <div class="submenu_design">
+                <a href="#" id="design">Design / Color ▸</a>
+                <div class="submenu-content-design">
+                    <a href="#" id="dark" onclick="DARK()">Dark</a>
+                    <a href="#" id="light" onclick="LIGHT()">Light</a>
+                </div>
+            </div>
+
+            <div class="submenu">
+                <a href="#" id="language">Language ▸</a>
+                <div class="submenu-content">
+                    <a href="#" id="deutsch" onclick="DEUTSCH()">German</a>
+                    <a href="#" id="englisch" onclick="ENGLISCH()">English</a>
+                </div>
+            </div>
+
+            <a href="" id="social_media">Social media</a>
+            <a href="" id="feedback_kontakt">Feedback / Kontaktformular</a>
+        </div>
+    </div>
+    
+
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i id="home" class="fa-solid fa-house"></i>
+                </a>
+            </li>
+
+            <li><a id="about" href="about.html" target="_blank">About us</a></li>
+            <li><a id="help_support" href="help.html" target="_blank">Help / Support</a></li>
+            <li><a id="workwithus" href="work_with_us.html" target="_blank">Work with us</a></li>
+            <li><a id="sourcecode" href="source_code.html" target="_blank">Source & Development</a></li>
+            <li>
+                <a href="contact.html" target="_blank">
+                    <i id="kontakt" class="fa-solid fa-phone"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="input-row">
+            <label id="amount_runs">Amount runs:</label>
+            <input type="text" id="newEntry" name="newEntry">
+            <button id="addEntry" onclick="SETRUNS()">Submit</button>
+        </div>
+
+        <div class="table">
+            <!-- Kopfzeile -->
+            <!--
+            <div class="row header">
+                <div id="run" class="cell">Run</div>
+                <div id="dis" class="cell">Distance</div>
+                <div id="time" class="cell">Time</div>
+            </div>
+            -->
+
+            <!-- Datenzeilen -->
+            <!--
+            <div class="row">
+                <div class="cell">lauf1</div>
+                <div class="cell"><input type="text" name="dist1"></div>
+                <div class="cell"><input type="text" name="zeit1"></div>
+            </div>
+            <div class="row">
+                <div class="cell">lauf2</div>
+                <div class="cell"><input type="text" name="dist2"></div>
+                <div class="cell"><input type="text" name="zeit2"></div>
+            </div>
+            <div class="row">
+                <div class="cell">lauf3</div>
+                <div class="cell"><input type="text" name="dist3"></div>
+                <div class="cell"><input type="text" name="zeit3"></div>
+            </div>
+            -->
+            <!-- weitere Zeilen nach Bedarf -->
+        </div>
+
+        <div class="table2" id="toogle"></div>
+
+        <div class="table2" id="myChartContainer"></div>
+
+        <div class="table3" id="CONTAINER"></div>
+        
+    </main>
+
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="#" id="showImpressum">Impressum</a>
+            <a> | </a>
+            <a href="#" id="showDatenschutz">Datenschutz</a>
+            <a> | </a>
+            <a href="#" id="showUrheberrecht">Urheberrecht</a>
+            <a> | </a>
+            <a href="#" id="showKontakt">Kontakt</a>
+
+        </nav>
+    </footer>
+
+    <!-- Panel unter Footer, full width -->
+    <div id="infoPanel">
+        <button id="closePanel">×</button>
+        <div id="panelContent"></div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!--
+impressum
+
+**Impressum**
+
+Angaben gemäß § 5 TMG:
+
+Rodin Aksünger  
+Bohnapfelweg 27  
+70437 Stuttgart  
+Deutschland  
+
+Kontakt:  
+E-Mail: contact.instantpace@yahoo.com  
+
+Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:  
+Rodin Aksünger
+
+Dies ist eine private, nicht-kommerzielle Webseite. Es werden keine personenbezogenen Daten erhoben.
+-->
